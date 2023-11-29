@@ -135,31 +135,6 @@ def get_sentence_similarity (doc_0, doc_1) :
                 "similarity": -1
             })
 
-    # for i in range (len (vectors_1)):
-    #     similarities = {}
-    #     maxSimilarity = -1
-    #     for j in range (len (vectors_0)):
-    #         result = 1 - spatial.distance.cosine (vectors_1[i], vectors_0[j])
-    #         if result > maxSimilarity:
-    #             maxSimilarity = result
-    #             similarities = {
-    #                 "index": j,
-    #                 "sentence": sentences_0[j],
-    #                 "similarity": result
-    #             }
-
-    #     value =  {
-    #         "doc_1": {
-    #             "index": i,
-    #             "sentence": sentences_1[i]
-    #         },
-    #         "doc_0": {
-    #             "index": similarities["index"],
-    #             "sentence": similarities["sentence"]
-    #         },
-    #         "similarity": similarities["similarity"]
-    #     }
-    #     values["doc_1"].append(value)
 
 
     return values
